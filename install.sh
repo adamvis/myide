@@ -75,6 +75,7 @@ EOT
 chmod +x ~/myide.sh
 
 # Add an alias for myide
+echo "#MyIDE" >> ~/.bashrc
 echo "alias myide='~/myide.sh'" >> ~/.bashrc
 
 # Reload .bashrc to apply the alias
