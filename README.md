@@ -1,5 +1,7 @@
 # MyIDE
 
+A supersimple nano-based IDE for emergencies.
+
 ## Overview
 
 MyIDE is a terminal-based integrated development environment (IDE) that utilizes `tmux`, `ranger`, and `nano` to provide a powerful and customizable workspace for developers. This setup allows you to navigate your file system, edit files, and run terminal commands within a split-terminal layout.
