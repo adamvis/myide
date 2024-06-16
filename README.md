@@ -123,13 +123,3 @@ Contributions and suggestions are welcome! Feel free to open an issue or submit 
 ## License
 
 This project is licensed under the MIT License.
-```
-
-### Save and Share the README
-
-1. Save the above text into a file named `README.md`.
-2. Share or place this file in your project repository or distribute it along with your installation script.
-
-### Instructions for Using `wget`
-
-Since the installation script URL is a placeholder (`https://example.com/install_myide.sh`), make sure to replace it with the actual URL where your script is hosted.
