@@ -4,6 +4,17 @@
 sudo apt update
 sudo apt install -y tmux ranger nano
 
+# Prompt the user if they want to install ipython
+read -p "Do you want to install IPython for enhanced interactive shell? (y/n): " install_ipython
+
+if [ "$install_ipython" == "y" ]; then
+    sudo apt install -y python3-pip
+    pip3 install ipython
+    ipython_command="ipython"
+else
+    ipython_command=""
+fi
+
 # Create ranger configuration directory if it doesn't exist
 mkdir -p ~/.config/ranger
 
@@ -66,6 +77,7 @@ tmux select-pane -t 1
 
 # Bottom right pane: terminal (default shell)
 tmux select-pane -t 2
+tmux send-keys "$ipython_command" C-m
 
 # Attach to the session
 tmux attach-session -t \$SESSION_NAME
@@ -75,7 +87,7 @@ EOT
 chmod +x ~/myide.sh
 
 # Add an alias for myide
-echo "#MyIDE" >> ~/.bashrc
+echo "# MyIDE" >> ~/.bashrc
 echo "alias myide='~/myide.sh'" >> ~/.bashrc
 
 # Reload .bashrc to apply the alias
