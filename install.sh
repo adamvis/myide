@@ -4,6 +4,15 @@
 sudo apt update
 sudo apt install -y tmux ranger nano
 
+# Set Mouse on Nano editor
+sudo bash -c 'cat <<EOT > /etc/nanorc
+set mouse
+include "/usr/share/nano/python.nanorc"
+include "/usr/share/nano/html.nanorc"
+include "/usr/share/nano/tex.nanorc"
+include "/usr/share/nano/sh.nanorc"
+EOT'
+
 # Prompt the user if they want to install ipython
 read -p "Do you want to install IPython for enhanced interactive shell? (y/n): " install_ipython
 
@@ -17,6 +26,13 @@ fi
 
 # Create ranger configuration directory if it doesn't exist
 mkdir -p ~/.config/ranger
+
+# Create tmux configuration file
+sudo bash -c 'cat <<EOT > /etc/tmux.conf 
+# Mouse naviation 
+set -g mouse on 
+EOT'
+
 
 # Create ranger configuration file
 cat <<EOT > ~/.config/ranger/rc.conf
