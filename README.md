@@ -19,7 +19,7 @@ To install and configure MyIDE on a new Linux machine, follow these steps:
 1. Download the installation script:
 
     ```sh
-    wget https://github.com/adamvis/myide/blob/main/install.sh -O install_myide.sh
+    wget https://raw.githubusercontent.com/adamvis/myide/main/install.sh -O install_myide.sh
     ```
 
 2. Make the script executable:
