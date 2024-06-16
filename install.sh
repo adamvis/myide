@@ -8,7 +8,7 @@ sudo apt install -y tmux ranger nano
 read -p "Do you want to install IPython for enhanced interactive shell? (y/n): " install_ipython
 
 if [ "$install_ipython" == "y" ]; then
-    sudo apt install -y python3-pip
+    sudo apt install -y python3-pip python3-tk
     pip3 install ipython
     ipython_command="ipython"
 else
