@@ -53,7 +53,7 @@ This command will open a `tmux` session with the following layout:
 - **Top right pane (80%)**: `nano` text editor.
 - **Bottom right pane (20%)**: Terminal for running commands.
 
-To navigate the IDE panels use **Ctrl+b** and then **<arrow-key>** while to modify relative sizes of panels use **Ctrl+b+<arrow-key>**
+To navigate the IDE panels use **Ctrl+b** and then **\<arrow-key\>** while to modify relative sizes of panels use **Ctrl+b+\<arrow-key\>**
 
 ### Navigating in Ranger
 
