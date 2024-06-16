@@ -1,7 +1,4 @@
-### README.md
-
-```markdown
-# MyIDE Setup and Usage
+# MyIDE
 
 ## Overview
 
