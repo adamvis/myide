@@ -21,7 +21,13 @@ mkdir -p ~/.config/ranger
 # Create ranger configuration file
 cat <<EOT > ~/.config/ranger/rc.conf
 # Only display one column in ranger
-set column_ratios 0,1,0
+# Preview files on the rightmost column?
+# And collapse (shrink) the last column if there is nothing to preview?
+set preview_files false
+set preview_directories false
+set collapse_preview true
+set padding_right false
+set column_ratios 0
 set show_hidden true
 
 # Ensure only one column is visible
